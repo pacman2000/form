@@ -1,0 +1,87 @@
+/* user login and register */
+
+.alignLeft{
+	text-align: left;
+	justify-content: left;
+	display: flex;
+}
+
+.boxWidth{
+	width: 275px;
+	font-size: .75em !important;
+}
+
+#loginBox, #registerBox, #lostPasswordBox{
+	background-color: #F2B2AC;
+	border-color: #F2B2AC;
+	border-radius: 5px;
+	padding: 2em;
+	text-align: center;
+}
+
+#loginBox h3, #registerBox h3, #lostPasswordBox h3{
+	color: #d44848;
+	font-size: 1.5em;
+}
+
+#loginBox p, #registerBox p, #lostPasswordBox p{
+	/* color: #0e0157; */
+	font-size: 1em;
+}
+
+#loginBox p a, #registerBox p a, #lostPasswordBox p a{
+	color: #0e0157;
+	text-decoration: none;
+}
+
+#btnSubmitLogin, #btnSubmitRegister, #btnSubmitNewPassword{
+	background-color: #f25252;
+	color: white;
+	padding: 1px;
+/* 	outline: none; */
+}
+
+#btnSubmitLogin:hover, #btnSubmitRegister:hover, #btnSubmitNewPassword:hover{
+	box-shadow: 3px 3px 10px white;
+}
+
+#btnLinkNewUser{
+	background-color: #ffffff;
+	color: #302E59;
+	padding: 1px;
+}
+
+#btnLinkNewUser:hover{
+	box-shadow: 3px 3px 10px #f25252; 
+}
+
+#loginBox p a:hover, #registerBox p a:hover{	
+	color: #c50d0d;
+	transition: all 350ms ease;
+}
+
+input, button{
+	outline: none;	
+}
+
+.inputclass{
+	width: 275px;
+	height: 40px;
+	border: none;
+	border-radius: 3px;
+}
+.inputclass:focus{
+	width: 275px;
+	height: 40px;
+	border: none;
+	border-radius: 3px;
+}
+
+.errorclass{
+	color: #ff0202;
+	font-size: 0.75em;
+	padding-left: 4px;
+	width: 275px;
+}
+
+

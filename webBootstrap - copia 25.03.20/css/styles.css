@@ -1,0 +1,259 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*header*/
+header{
+	text-align: center;	
+}
+
+header h1{	
+	color: #f25252;
+	font-size: 4em;	
+}
+
+header p{	
+	color: #F2B2AC;
+	font-size: 2em;	
+	margin-bottom: 3rem;
+}
+
+.myheader{
+	width: 100%;	
+	background-color: #302E59;
+	padding: 15px 0;
+}
+
+li{
+	text-align: center !important;
+}
+
+.mynavlink{	
+	margin-top: 2px;
+	color: rgb(233, 233, 233);
+	text-decoration: none;
+	font-size: 1em;
+	text-align: center;
+}
+
+.mynavlink:hover{
+	color:#F2B2AC;	
+}
+
+.navbar-collapse{
+	flex-grow: 0  !important;
+}
+
+.navbar-toggler{
+	padding: .25em .25em !important;
+	border: 1px solid #f8f9fa82  !important;
+	color: rgba(255,255,255,1) !important;
+	font-size: 1rem  !important;
+}
+
+#togglerButton:focus {  
+	outline: none;
+}
+ 
+#togglerButton:active {
+	background-color: #f25252;
+} 
+
+.logo{
+	border-radius: 8%;	
+}
+
+
+/*body*/
+body{
+	font-size: 16 px;
+}
+
+main{
+	display: flex;
+	flex-direction: row;
+	margin: 40px 20px;
+	justify-content: center;
+}
+
+/* index sections */
+.section{
+	margin: auto;
+	width: 100%;
+	display: block;
+}
+
+section h1{
+	color:rgb(211, 154, 149);
+	font-size: 2em;	
+	text-align: center;
+	margin: 20px 0px;
+}
+
+section p{
+	color: rgb(112, 112, 112);
+	font-size: 1em;	
+	text-align: left;
+	margin: 20px;
+}
+
+section img:hover{
+	filter: opacity(.5);
+}
+
+/* index figure efect */
+figure.novelty_efect{
+	color: #fff;
+	position: relative;
+	overflow: hidden;	
+	width: 100%;
+	background: #000000;
+	text-align: center;
+}
+
+figure.novelty_efect * {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+figure.novelty_efect img{
+opacity: 1;
+width: 100%;
+-webkit-transition: opacity 0.35s;
+transition: opacity 0.35s;
+}
+
+figure.novelty_efect figcaption{
+position: absolute;
+bottom: 0;
+left: 0;
+padding: 3em 3em;
+width: 100%;
+height: 100%;
+}
+
+figure.novelty_efect figcaption::before{
+position: absolute;
+top: 50%;
+right: 30px;
+bottom: 50%;
+left: 30px;
+border-top: 1px solid rgba(255, 255, 255, 0.8);
+border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+content: '';
+opacity: 0;
+background-color: #ffffff;
+-webkit-transition: all 0.4s;
+transition: all 0.4s;
+-webkit-transition-delay: 0.6s;
+transition-delay: 0.6s;
+}
+
+figure.novelty_efect h2{
+margin: 25% 0 10%;
+font-size: 200%;
+top: 80%;
+opacity: 0;
+-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+}
+
+figure.novelty_efect h2{
+-webkit-transform: translate3d(0%, 50%, 0);
+transform: translate3d(0%, 50%, 0);
+-webkit-transition-delay: 0.3s;
+transition-delay: 0.3s;
+}
+
+figure.novelty_efect a{
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+position: absolute;
+color: #ffffff;
+}
+
+figure.novelty_efect:hover img{
+opacity: 0.35;
+}
+
+figure.novelty_efect:hover figcaption h2{
+opacity: 1;
+-webkit-transform: translate3d(0%, 0%, 0);
+transform: translate3d(0%, 0%, 0);
+-webkit-transition-delay: 0.3s;
+transition-delay: 0.3s;
+}
+
+figure.novelty_efect:hover figcaption::before{
+background: rgba(255, 255, 255, 0);
+top: 30px;
+bottom: 30px;
+opacity: 1;
+-webkit-transition-delay: 0s;
+transition-delay: 0s;
+}
+
+/* index novelties */
+.novelty{
+	margin: auto;	
+	align-content: center;	
+	vertical-align: top;
+}
+
+.novelty_content{
+	display: flex;
+	flex-direction: row;
+	margin: auto;		
+	align-content: center;
+}
+
+.novelty_image{
+	margin: auto;	
+	margin-bottom: 20px;		
+}
+
+
+/*footer*/
+footer{
+	height: 140px;
+	background-color: #302E59;
+	color: rgb(233, 233, 233);			
+}
+
+@media (max-width:575px){
+	footer {
+		height: 200px;
+	}
+}
+
+footer a{
+	text-decoration: none;
+	color: rgb(233, 233, 233);
+}
+
+.icon_collection{
+	display: flex;
+	flex-direction: row; 
+	margin: auto;
+	justify-content: center;	
+}
+
+.icon{
+	margin: 0px 5px;	
+}
+
+
+/* Colores usados
+párrafo color texto => rgb(112, 112, 112);
+h1 color texto => rgb(211, 154, 149);
+header/footer background =>  #302E59;
+header titulo => #f25252;
+header subtitulo => #F2B2AC; 
+login p a=> #0e0157;
+input:focus => border: 3px solid rgb(48, 46, 89, 0.75);
+*/
